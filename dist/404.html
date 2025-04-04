@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found</title>
+  <script>
+    // Handle SPA routing with GitHub Pages
+    const segment = 1; // Adjust this to be the segment count in your path
+    const repo = "/apple-style"; // Adjust this to be your repo name
+    
+    const path = window.location.pathname.split('/').slice(0, 1 + segment).join('/');
+    localStorage.setItem('path', window.location.pathname.slice(path.length));
+    window.location.href = `${repo}${localStorage.getItem('path') || ''}`;
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html> 
