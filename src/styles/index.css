@@ -9,6 +9,18 @@
   --apple-green: #34c759;
   --apple-black: #111111;
 
+  /* Theme variables - light mode (default) */
+  --bg-color: var(--apple-white);
+  --bg-secondary: var(--apple-light-gray);
+  --text-color: var(--apple-dark-gray);
+  --text-secondary: var(--apple-gray);
+  --border-color: rgba(0, 0, 0, 0.1);
+  --card-bg: var(--apple-white);
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.05);
+  --card-hover-shadow: 0 10px 15px rgba(0, 0, 0, 0.07), 0 4px 6px rgba(0, 0, 0, 0.05);
+  --header-bg: rgba(255, 255, 255, 0.8);
+  --header-border: rgba(0, 0, 0, 0.1);
+
   /* Spacing variables */
   --spacing-xs: 4px;
   --spacing-sm: 8px;
@@ -23,6 +35,20 @@
   --radius-lg: 12px;
 }
 
+/* Dark mode theme variables */
+[data-theme='dark'] {
+  --bg-color: var(--apple-black);
+  --bg-secondary: #1c1c1e;
+  --text-color: var(--apple-white);
+  --text-secondary: #aeaeb2;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --card-bg: #1c1c1e;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
+  --card-hover-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2);
+  --header-bg: rgba(17, 17, 17, 0.8);
+  --header-border: rgba(255, 255, 255, 0.1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -34,9 +60,10 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
-  color: var(--apple-dark-gray);
-  background-color: var(--apple-white);
+  color: var(--text-color);
+  background-color: var(--bg-color);
   line-height: 1.5;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
@@ -57,6 +84,7 @@ button {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.2;
+  color: var(--text-color);
 }
 
 h1 {
@@ -75,6 +103,7 @@ h3 {
 
 p {
   margin-bottom: var(--spacing-md);
+  color: var(--text-color);
 }
 
 img {
@@ -97,4 +126,5 @@ img {
   align-items: center;
   height: 100px;
   font-weight: 500;
+  color: var(--text-color);
 } 

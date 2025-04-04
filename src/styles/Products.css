@@ -1,5 +1,5 @@
 .products-page {
-  background-color: var(--apple-white);
+  background-color: var(--bg-color);
 }
 
 .products-header {
@@ -27,14 +27,14 @@
   border-radius: 20px;
   font-size: 14px;
   font-weight: 500;
-  color: var(--apple-gray);
+  color: var(--text-secondary);
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .filter-tab:hover {
-  color: var(--apple-dark-gray);
-  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--text-color);
+  background-color: var(--border-color);
 }
 
 .filter-tab.active {
@@ -51,16 +51,16 @@
 }
 
 .product-card {
-  background-color: var(--apple-white);
+  background-color: var(--card-bg);
   border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--card-hover-shadow);
 }
 
 .product-image-container {
@@ -87,7 +87,7 @@
   font-size: 18px;
   font-weight: 600;
   margin-bottom: var(--spacing-xs);
-  color: var(--apple-dark-gray);
+  color: var(--text-color);
 }
 
 .product-price {
@@ -98,7 +98,7 @@
 }
 
 .product-description {
-  color: var(--apple-gray);
+  color: var(--text-secondary);
   font-size: 14px;
   margin-bottom: var(--spacing-md);
   line-height: 1.5;
@@ -106,7 +106,7 @@
 
 /* Call to Action */
 .product-cta {
-  background-color: var(--apple-light-gray);
+  background-color: var(--bg-secondary);
   padding: var(--spacing-xxl) 0;
   text-align: center;
   border-radius: var(--radius-lg);

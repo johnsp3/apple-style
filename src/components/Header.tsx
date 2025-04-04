@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import ThemeToggle from './ThemeToggle'
 import '../styles/Header.css'
 
 const Header = () => {
@@ -46,6 +47,9 @@ const Header = () => {
                 <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>
                   Contact
                 </NavLink>
+              </li>
+              <li className="nav-item theme-toggle-item">
+                <ThemeToggle />
               </li>
             </ul>
           </nav>

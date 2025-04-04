@@ -1,5 +1,5 @@
 .about-page {
-  background-color: var(--apple-white);
+  background-color: var(--bg-color);
 }
 
 .about-header {
@@ -9,11 +9,11 @@
 
 .about-section {
   padding: var(--spacing-xxl) 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .about-section.alternate {
-  background-color: var(--apple-light-gray);
+  background-color: var(--bg-secondary);
 }
 
 .about-grid {
@@ -38,19 +38,19 @@
 
 .about-content h2 {
   margin-bottom: var(--spacing-md);
-  color: var(--apple-dark-gray);
+  color: var(--text-color);
 }
 
 .about-content p {
   margin-bottom: var(--spacing-md);
-  color: var(--apple-gray);
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 
 .about-image-container {
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--card-shadow);
 }
 
 .about-image {
@@ -82,7 +82,7 @@
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto var(--spacing-md);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--card-shadow);
 }
 
 .team-image {
@@ -94,17 +94,18 @@
 .team-name {
   margin-bottom: var(--spacing-xs);
   font-size: 20px;
+  color: var(--text-color);
 }
 
 .team-role {
-  color: var(--apple-gray);
+  color: var(--text-secondary);
   font-size: 16px;
 }
 
 /* Values Section */
 .values-section {
   padding: var(--spacing-xxl) 0;
-  background-color: var(--apple-light-gray);
+  background-color: var(--bg-secondary);
 }
 
 .values-grid {
@@ -115,26 +116,26 @@
 }
 
 .value-item {
-  background-color: var(--apple-white);
+  background-color: var(--card-bg);
   padding: var(--spacing-xl);
   border-radius: var(--radius-md);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .value-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--card-hover-shadow);
 }
 
 .value-title {
   margin-bottom: var(--spacing-md);
   font-size: 20px;
-  color: var(--apple-dark-gray);
+  color: var(--text-color);
 }
 
 .value-description {
-  color: var(--apple-gray);
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 

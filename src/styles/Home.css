@@ -5,7 +5,7 @@
 /* Hero Section */
 .hero {
   padding: var(--spacing-xxl) 0;
-  background-color: var(--apple-white);
+  background-color: var(--bg-color);
   text-align: center;
 }
 
@@ -19,7 +19,7 @@
 /* Features Section */
 .features {
   padding: var(--spacing-xxl) 0;
-  background-color: var(--apple-light-gray);
+  background-color: var(--bg-secondary);
 }
 
 .features-grid {
@@ -34,15 +34,15 @@
   align-items: center;
   text-align: center;
   padding: var(--spacing-lg);
-  background-color: var(--apple-white);
+  background-color: var(--card-bg);
   border-radius: var(--radius-md);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--card-hover-shadow);
 }
 
 .feature-icon {
@@ -60,10 +60,11 @@
 .feature-title {
   margin-bottom: var(--spacing-sm);
   font-size: 20px;
+  color: var(--text-color);
 }
 
 .feature-description {
-  color: var(--apple-gray);
+  color: var(--text-secondary);
   font-size: 16px;
   margin-bottom: 0;
 }
@@ -71,12 +72,13 @@
 /* Showcase Section */
 .showcase {
   padding: var(--spacing-xxl) 0;
-  background-color: var(--apple-white);
+  background-color: var(--bg-color);
 }
 
 .section-title {
   text-align: center;
   margin-bottom: var(--spacing-md);
+  color: var(--text-color);
 }
 
 .card-image-container {
@@ -95,7 +97,7 @@
 /* Call to Action */
 .cta {
   padding: var(--spacing-xxl) 0;
-  background-color: var(--apple-light-gray);
+  background-color: var(--bg-secondary);
   text-align: center;
 }
 
@@ -107,10 +109,11 @@
 .cta-title {
   margin-bottom: var(--spacing-md);
   font-size: 32px;
+  color: var(--text-color);
 }
 
 .cta-subtitle {
-  color: var(--apple-gray);
+  color: var(--text-secondary);
   margin-bottom: var(--spacing-lg);
 }
 
